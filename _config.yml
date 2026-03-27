@@ -1,0 +1,14 @@
+title: Blogo
+description: Personal blog powered by Jekyll and GitHub Pages.
+url: "https://disconnecter.github.io"
+baseurl: "/blogo"
+theme: minima
+plugins:
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
