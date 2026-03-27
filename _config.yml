@@ -2,13 +2,28 @@ title: Blogo
 description: Personal blog powered by Jekyll and GitHub Pages.
 url: "https://disconnecter.github.io"
 baseurl: "/blogo"
-theme: minima
+locale: en-US
+masthead_title: Blogo
+remote_theme: "mmistakes/minimal-mistakes@4.28.0"
+minimal_mistakes_skin: "air"
+paginate: 5
+paginate_path: /page:num/
+include:
+  - _pages
+
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
 
 defaults:
   - scope:
       path: ""
       type: posts
     values:
-      layout: post
+      layout: single
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
