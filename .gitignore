@@ -42,3 +42,7 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .sass-cache/
+
+# Local agent config #
+######################
+.pi/
